@@ -11,6 +11,9 @@
 		<meta property='og:image' content='A CSS methodology so great, it needed a name.'>
 
 		<link rel='stylesheet' href='styles/site.css'>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Roboto+Serif:opsz,wght@8..144,100&display=swap" rel="stylesheet">
 	</head>
 
 
@@ -26,11 +29,10 @@
 		<main>
 
 			<section class='welcome' id='welcome'>
-			<inner-column>
+
 
 				<?php include('modules/graphic-diptych/template.php'); ?>
 
-			</inner-column>
 			</section>
 
 

@@ -3,9 +3,9 @@
 
 <articles-intro>
 	<header>
-		<h2 class='attention-voice'>Heading for this section here</h2>
+		<h2 class='attention-voice'>A Collection of Unforgettable Experiences</h2>
 
-		<p>A short introduction explaining why these articles are here to help you understand if you want to read them.</p>
+		<p>Something for everyone in a resort beyond your dreams. Plush interior design, perfect panoramas of the sea, and pure vistas of forest and rivers.</p>
 	</header>
 
 	<article-grid>

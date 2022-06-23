@@ -29,7 +29,7 @@
 
 /* then other contextual styles */
 body {
-	background-color: var(--paper);
+	background-color: white;
 	color: var(--ink);
 }
 
@@ -38,7 +38,7 @@ section:is(.sign-up, .get-involved) inner-column {
 }
 
 section.get-involved {
-	background-color: var(--highlight);
+	background-color:;
 }
 
 section.get-involved .button {

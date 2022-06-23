@@ -1,3 +1,24 @@
+.sign-up {
+	padding: 40px;
+	background-image: url("https://i.imgur.com/E5PJKM4.jpg");
+	background-color: rgba(0, 0, 0, 0.4);
+	background-blend-mode: overlay;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center 10%;
+	background-attachment: fixed;
+}
+
+.get-involved {
+	padding: 40px;
+	background-image: url("https://i.imgur.com/E5PJKM4.jpg");
+	background-color: rgba(0, 0, 0, 0.4);
+	background-blend-mode: overlay;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center 10%;
+	background-attachment: fixed;
+}
 
 call-to-action {
 	display: block;
@@ -6,6 +27,9 @@ call-to-action {
 	flex-direction: column;
 	align-items: flex-start;
 	padding: 10vh 0;
+	color: white;
+	align-items: center;
+	text-align: center;
 }
 
 call-to-action .button {

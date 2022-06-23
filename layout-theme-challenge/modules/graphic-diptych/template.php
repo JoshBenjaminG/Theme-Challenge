@@ -2,13 +2,15 @@
 <graphic-diptych>
 
 	<picture>
-		<img src='https://peprojects.dev/images/landscape.jpg' alt='$todo'>
+		<img src='https://i.imgur.com/gmhNhBr.jpg' alt='$todo'>
 	</picture>
-	
+
 	<text-content>
-		<h1 class='loud-voice'>This is a graphic diptych</h1>
+	<h1 class='loud-voice'>Come Explore the Coast of Croatia</h1>
 
-		<p>What a fun thing that we have here</p>
+	<p>Discover glorious views of the crystal-clear waters of the Adriatic Sea, impressive and flexible suites, and more!</p>
 	</text-content>
-
+	
 </graphic-diptych>
+
+
