@@ -5,8 +5,8 @@
 	<nav class='site-menu'>
 		<ul>
 			<li>
-				<a href='#'>
-					<?php include('modules/logo.php'); ?>
+				<a href='#' class="logo">
+					<?php include('images/lion-svg.svg'); ?>
 				</a>
 			</li>
 

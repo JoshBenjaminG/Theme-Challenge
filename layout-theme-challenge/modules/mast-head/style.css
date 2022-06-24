@@ -1,6 +1,12 @@
 header {
 	background-color: white;
 	padding: 10px;
+
+}
+
+.site-header {
+	position: sticky;
+	top: 0;
 }
 
 mast-head {
@@ -9,11 +15,15 @@ mast-head {
 }
 
 mast-head .logo {
-	max-width: 180px;
+	max-width: 30px;
 }
 
 mast-head .logo * {
 	fill: var(--ink);
+}
+
+mast-head nav {
+
 }
 
 mast-head nav ul {

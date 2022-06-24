@@ -3,11 +3,11 @@
 
 	<nav class='site-menu'>
 		<ul>
-<!-- 			<li>
-				<a class='home' href='#'>
-					<?php include('modules/logo.php'); ?>
+		<li>
+				<a class='home logo' href='#'>
+					<?php include('images/lion-svg.svg'); ?>
 				</a>
-			</li> -->
+			</li>
 
 			<li>
 				<a href='#'>Some page</a>
