@@ -6,12 +6,18 @@
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+	border: 1px solid rgba(0, 0, 0, 0.4);
 }
 
 .article-card text-content {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+	padding: 20px;
+}
+
+.article-card text-content h1 {
+	margin-bottom: 20px;
 }
 
 .article-card a {

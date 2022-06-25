@@ -1,12 +1,12 @@
 header {
 	background-color: white;
-	padding: 10px;
 
 }
 
 .site-header {
 	position: sticky;
 	top: 0;
+	box-shadow: 0 4px 2px -2px #cdcdcd;
 }
 
 mast-head {

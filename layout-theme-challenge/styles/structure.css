@@ -17,6 +17,12 @@ inner-column {
 	margin-left: auto;
 }
 
+@media(min-width: 600px) {
+	inner-column {
+		width: 90%;
+	}
+}
+
 inner-column.tight {
 	max-width: var(--tight);
 }
