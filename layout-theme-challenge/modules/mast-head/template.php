@@ -4,7 +4,7 @@
 	<nav class='site-menu'>
 		<ul>
 		<li>
-				<a class='home logo' href='#'>
+				<a class='home logo' href='index.php'>
 					<?php include('images/lion-svg.svg'); ?>
 				</a>
 			</li>

@@ -3,6 +3,7 @@
 	$heading = $article['heading'];
 	$description = $article['description'];
 	$thumbnail = $article['thumbnail'];
+	$id = $article["id"];
 ?>
 
 <article class='article-card'>
@@ -15,6 +16,6 @@
 
 		<p class='teaser'><?=$description?></p>
 
-		<a class='button' href='#'>Call to action</a>
+		<a class='button' href='?page=detail&id=<?=$id?>'>Call to action</a>
 	</text-content>
 </article>
