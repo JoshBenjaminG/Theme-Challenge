@@ -9,6 +9,19 @@
 		$page = "home";
 	}
 
+	function getPage($thisPage) {
+		include($thisPage . ".php");
+	}
+
+
+	// if ($page == "home") {
+	// 	include('home.php');
+	// } elseif ($page == "detail") {
+	// 	include('detail.php');
+	// } elseif ($page == "create") {
+	// 	include('create.php');
+	// }
+
 ?>
 
 <html lang='en' class='special-magic no-js'>
@@ -30,9 +43,10 @@
 
 </html>
 
-<?php echo $page ?>
+<?php include('data/articles.php'); ?>
 
 	<body>
+		<a href="?page=create">Create Page</a>
 		<header class="site-header">
 		<inner-column>
 			
@@ -43,15 +57,7 @@
 
 		<main>
 
-			<?php 
-
-				if ($page == "home") {
-					include('home.php');
-				} elseif ($page == "detail") {
-					include('detail.php');
-				}
-
-			?>
+			<?php getPage($page); ?>
 
 
 		</main>

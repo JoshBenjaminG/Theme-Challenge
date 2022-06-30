@@ -1,6 +1,6 @@
 <?php 
 
-include('data/articles.php');
+include("data/articles.php");
 
 $thisArticle = "";
 $id = $_GET['id'];
@@ -16,8 +16,8 @@ foreach ($articles as $article) {
 <section>
 	<inner-column>
 		
-		<h1><?=$thisArticle["heading"]?></h1>
-		<h1><?=$thisArticle["description"]?></h1>
+		<h1 class="loud-voice"><?=$thisArticle["heading"]?></h1>
+		<p class="loud-voice"><?=$thisArticle["description"]?></p>
 		<picture>
 			<img src='<?=$thisArticle["thumbnail"]?>' alt='$todo'>
 		</picture>
