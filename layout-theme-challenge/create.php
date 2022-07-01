@@ -9,14 +9,27 @@
 	.create button {
 		width: 100px;
 	}
+	.error {
+		color: red;
+	}
+	.success {
+		color: green;
+	}
 </style>
 
 <?php 
 
 $message = "";
+$submit = "";
 
 if (isset($_POST['add'])) {
-	$message = "Added";
+	if ($_POST['heading'] && $_POST['description']) {
+		$message = "Added";
+		$submit = "success";
+	} else {
+		$message = "Invalid";
+		$submit = "error";
+	}
 }
 
 ?>
@@ -28,13 +41,23 @@ if (isset($_POST['add'])) {
 
 <form method="POST" class="create">
 	<field>
+
+		<?php if (!$_POST['heading']) { ?>
+			<p class="calm-voice error">Add Heading</p>
+		<?php } ?>
+
 		<label>Heading</label>
-		<input type="string" name="Heading">
+		<input type="string" name="heading" placeholder="A premium heading">
 	</field>
 
 	<field>
+
+		<?php if (!$_POST['description']) { ?>
+			<p class="calm-voice error">Add Description</p>
+		<?php } ?>
+
 		<label>Description</label>
-		<input type="string" name="Description">
+		<input type="string" name="description" placeholder="A fantastic description">
 	</field>
 
 	<field>
@@ -45,6 +68,6 @@ if (isset($_POST['add'])) {
 	<button type="submit" name="add">Add</button>
 </form>
 
-<h1 class="loud-voice"><?=$message?></h1>
+<h1 class="loud-voice <?=$submit?>"><?=$message?></h1>
 
 </section>
