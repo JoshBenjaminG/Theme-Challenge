@@ -11,11 +11,11 @@
 			</li>
 
 			<li>
-				<a href='#'>Some page</a>
+				<a href='#'>Light Mode</a>
 			</li>
 
 			<li>
-				<a href='#'>Some other page</a>
+				<a href='?page=home&mode=dark'>Dark Mode</a>
 			</li>
 		</ul>
 	</nav>

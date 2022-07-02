@@ -33,6 +33,15 @@ body {
 	color: var(--ink);
 }
 
+.dark {
+	background-color: #404040;
+	color: white;
+}
+
+.dark .logo {
+	color: white;
+}
+
 section:is(.sign-up, .get-involved) inner-column {
 	max-width: var(--tight);
 }

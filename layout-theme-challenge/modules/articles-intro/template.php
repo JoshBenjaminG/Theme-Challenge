@@ -1,8 +1,15 @@
 
-<?php include ('data/articles.php'); ?>
+<?php include ('data/articles.php'); 
+
+$body = "";
+if ($_GET['mode'] == "dark") {
+	$body = "dark";
+}
+
+?>
 
 <articles-intro>
-	<header>
+	<header class="<?=$body?>">
 		<h2 class='attention-voice'>A Collection of Unforgettable Experiences</h2>
 
 		<p>Something for everyone in a resort beyond your dreams. Plush interior design, perfect panoramas of the sea, and pure vistas of forest and rivers.</p>

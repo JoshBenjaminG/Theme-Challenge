@@ -1,20 +1,21 @@
 
+
 <mast-head>
 
 	<nav class='site-menu'>
 		<ul>
 		<li>
-				<a class='home logo' href='index.php'>
+				<a class='home logo' href='?page=home&mode=light'>
 					<?php include('images/lion-svg.svg'); ?>
 				</a>
 			</li>
 
 			<li>
-				<a href='#'>Some page</a>
+				<a href='?page=home&mode=light' class="	<?php if ($_GET['mode'] == "light") { echo "active"; } ?>">Light Mode</a>
 			</li>
 
 			<li>
-				<a href='#'>Some other page</a>
+				<a href='?page=home&mode=dark' class="<?php if ($_GET['mode'] == "dark") { echo "active"; } ?>">Dark Mode</a>
 			</li>
 		</ul>
 	</nav>

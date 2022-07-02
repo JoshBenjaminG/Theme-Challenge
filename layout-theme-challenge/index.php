@@ -3,6 +3,7 @@
 <?php 
 
 	$page = "";
+
 	if ( isset($_GET['page']) ) {
 		$page = $_GET['page'];
 	} else {
@@ -11,6 +12,12 @@
 
 	function getPage($thisPage) {
 		include($thisPage . ".php");
+	}
+
+	$body = "";
+
+	if ($_GET['mode'] == "dark") {
+		$body = "dark";
 	}
 
 
@@ -45,9 +52,9 @@
 
 <?php include('data/articles.php'); ?>
 
-	<body>
+	<body class="<?=$body?>">
 		<a href="?page=create">Create Page</a>
-		<header class="site-header">
+		<header class="site-header <?=$body?>">
 		<inner-column>
 			
 			<?php include('modules/mast-head/template.php'); ?>
