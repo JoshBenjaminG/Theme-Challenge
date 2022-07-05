@@ -37,5 +37,10 @@ function deleteRecord($id) {
 	file_put_contents("data/data.json", $json);
 }
 
-
+function editRecord($key , $record) {
+	$data = getDatabase();
+	$data["articles"][$key] = $record;
+	$json = json_encode($data);
+	file_put_contents("data/data.json", $json);
+}
 ?>
