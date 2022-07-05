@@ -19,13 +19,26 @@
 
 <?php 
 
+include("functions.php");
+
+$record = "";
+$heading = $_POST['heading'];
+$description = $_POST['description'];
+$thumbnail = $_POST['thumbnail'];
+
 $message = "";
 $submit = "";
 
 if (isset($_POST['add'])) {
-	if ($_POST['heading'] && $_POST['description']) {
+	if ($heading && $description) {
 		$message = "Added";
 		$submit = "success";
+		$record = [
+			"heading" => $heading,
+			"description" => $description,
+			"thumbnail" => $thumbnail,
+		];
+		createRecord($record);
 	} else {
 		$message = "Invalid";
 		$submit = "error";
@@ -62,7 +75,7 @@ if (isset($_POST['add'])) {
 
 	<field>
 		<label>Thumbnail</label>
-		<input type="file" name="Thumbnail">
+		<input type="string" name="thumbnail" placeholder="https://i.imgur.com/b9gUeUb.jpg">
 	</field>
 
 	<button type="submit" name="add">Add</button>

@@ -2,6 +2,8 @@
 
 <?php 
 
+
+
 	$page = "";
 
 	if ( isset($_GET['page']) ) {
@@ -53,7 +55,7 @@
 <?php include('data/articles.php'); ?>
 
 	<body class="<?=$body?>">
-		<a href="?page=create">Create Page</a>
+		<a href="?page=create&mode=light">Create Page</a>
 		<header class="site-header <?=$body?>">
 		<inner-column>
 			

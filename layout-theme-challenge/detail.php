@@ -1,14 +1,18 @@
 <?php 
 
-include("data/articles.php");
+include("functions.php");
 
 $thisArticle = "";
 $id = $_GET['id'];
 
-foreach ($articles as $article) {
-	if ($id == $article["id"]) {
-		$thisArticle = $article;
+foreach (getArticles() as $key => $value) {
+	if ($id == $key) {
+		$thisArticle = $value;
 	}
+}
+
+if ($_POST['delete']) {
+	echo "deleted";
 }
 
 ?>
@@ -24,3 +28,9 @@ foreach ($articles as $article) {
 
 	</inner-column>
 </section>
+
+<form method="POST">
+
+	<button type="submit" name="delete">delete article</button>
+
+</form>

@@ -1,10 +1,14 @@
 
-<?php include ('data/articles.php'); 
+<?php
+
+include("functions.php");
 
 $body = "";
 if ($_GET['mode'] == "dark") {
 	$body = "dark";
 }
+
+
 
 ?>
 
@@ -18,10 +22,12 @@ if ($_GET['mode'] == "dark") {
 	<article-grid>
 		<ul class='article-list'>
 
-			<?php foreach ($articles as $article) { ?>
+			<?php foreach (getArticles() as $key => $article) { ?>
 				<li class='article'>
-					<?php include('modules/article-card/template.php'); ?>
-				</li>
+					<?php include('modules/article-card/template.php'); 
+					?>
+
+				</li>	
 			<?php } ?>
 
 		</ul>
