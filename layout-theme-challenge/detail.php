@@ -4,6 +4,7 @@ include("functions.php");
 
 $thisArticle = "";
 $id = $_GET['id'];
+$button = $_POST['delete'];
 
 foreach (getArticles() as $key => $value) {
 	if ($id == $key) {
@@ -11,9 +12,12 @@ foreach (getArticles() as $key => $value) {
 	}
 }
 
-if ($_POST['delete']) {
-	echo "deleted";
+if (isset($button)) {
+	deleteRecord($key);
+	echo "This article has been deleted.";
 }
+
+
 
 ?>
 
@@ -30,7 +34,5 @@ if ($_POST['delete']) {
 </section>
 
 <form method="POST">
-
 	<button type="submit" name="delete">delete article</button>
-
 </form>

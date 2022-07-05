@@ -8,7 +8,9 @@ function getDatabase() {
 		return [
 			"name" => "databaseName",
 			"lastUpdated" => date('a'),
-			"articles" => [],
+			"articles" => [
+
+			],
 		];
 	}
 }
