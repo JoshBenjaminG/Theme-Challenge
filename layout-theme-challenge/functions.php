@@ -7,7 +7,7 @@ function getDatabase() {
 	} else {
 		return [
 			"name" => "databaseName",
-			"lastUpdated" => date('a'),
+			"lastUpdated" => date('l'),
 			"articles" => [
 
 			],
@@ -15,11 +15,6 @@ function getDatabase() {
 	}
 }
 
-function getArticles() {
-	$data = getDatabase();
-	$articles = $data["articles"];
-	return $articles;
-}
 
 function createRecord($record) {
 	$data = getDatabase();
@@ -29,12 +24,10 @@ function createRecord($record) {
 	file_put_contents("data/data.json", $json);
 }
 
-
-function deleteRecord($id) {
+function getArticles() {
 	$data = getDatabase();
-	unset($data["articles"][$id]);
-	$json = json_encode($data);
-	file_put_contents("data/data.json", $json);
+	$articles = $data["articles"];
+	return $articles;
 }
 
 function editRecord($key , $record) {
@@ -43,4 +36,12 @@ function editRecord($key , $record) {
 	$json = json_encode($data);
 	file_put_contents("data/data.json", $json);
 }
+
+function deleteRecord($id) {
+	$data = getDatabase();
+	unset($data["articles"][$id]);
+	$json = json_encode($data);
+	file_put_contents("data/data.json", $json);
+}
+
 ?>
